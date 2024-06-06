@@ -2,10 +2,10 @@
 
 ### Tech:
 
-- Next.js
+- Next.js(UI)
+- Node.js(Server)
 - Tauri
-- Sqlite with encryption enabled
-- SeaORM
+- Sqlite with Drizzle ORM
 
 ### Building
 

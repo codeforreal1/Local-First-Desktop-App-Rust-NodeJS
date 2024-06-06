@@ -1,12 +1,12 @@
-import { Config } from "drizzle-kit";
-import { DATABASE_URL } from "./src/env";
+import { Config } from 'drizzle-kit'
+import env from './src/env'
 
 export default {
-  out: "./migrations",
-  schema: "./src/schema.ts",
+  out: './migrations',
+  schema: './src/schema.ts',
   breakpoints: true,
-  dialect: "sqlite",
+  dialect: 'sqlite',
   dbCredentials: {
-    url: DATABASE_URL,
+    url: env.DATABASE_URL,
   },
-} satisfies Config;
+} satisfies Config
