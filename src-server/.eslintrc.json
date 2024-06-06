@@ -1,0 +1,47 @@
+{
+  "root": true,
+  "env": {
+    "browser": false,
+    "es2021": true
+  },
+  "plugins": ["@typescript-eslint", "prettier", "unused-imports"],
+  "extends": ["airbnb", "airbnb-typescript", "airbnb/hooks", "prettier"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "project": "./tsconfig.json",
+    "warnOnUnsupportedTypeScriptVersion": false
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true
+      }
+    }
+  },
+  "rules": {
+    "no-unused-vars": "off",
+    "unused-imports/no-unused-imports": "error",
+    "@typescript-eslint/no-unused-vars": "error",
+    "import/order": 1,
+    "no-alert": 0,
+    "camelcase": 0,
+    "no-console": 2,
+    "no-param-reassign": 0,
+    "no-underscore-dangle": 0,
+    "no-restricted-exports": 0,
+    "jsx-a11y/anchor-is-valid": 0,
+    "no-promise-executor-return": 0,
+    "import/prefer-default-export": 0,
+    "@typescript-eslint/naming-convention": 0,
+    "jsx-a11y/control-has-associated-label": 0,
+    "@typescript-eslint/no-use-before-define": 0,
+    "prefer-destructuring": "off",
+    "no-nested-ternary": "off",
+    "import/no-extraneous-dependencies": 0
+  }
+}

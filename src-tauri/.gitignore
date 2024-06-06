@@ -1,0 +1,11 @@
+**/target/*
+
+src/lib/prisma.rs
+
+**/*.db
+**/*.db-journal
+**/sqlite.*
+
+.bin
+bin/*
+!bin/.gitkeep

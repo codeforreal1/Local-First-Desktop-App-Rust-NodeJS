@@ -1,0 +1,9 @@
+node_modules
+*.db
+.env
+bundle
+dist
+build
+bin/*
+!bin/.gitkeep
+./bundle.js

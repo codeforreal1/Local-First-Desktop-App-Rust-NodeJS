@@ -1,0 +1,4 @@
+{
+  "targets": ["node20-linux-x64"],
+  "assets": "migrations/**/*"
+}

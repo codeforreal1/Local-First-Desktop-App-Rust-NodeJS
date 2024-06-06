@@ -1,0 +1,61 @@
+{
+  "$schema": "../node_modules/@tauri-apps/cli/schema.json",
+  "productName": "Local Tauri",
+  "version": "1.2.0",
+  "identifier": "com.local-tauri.app",
+  "build": {
+    "beforeBuildCommand": "pnpm next:build && pnpm server:build",
+    "frontendDist": "../dist",
+    "devUrl": "http://localhost:3000"
+  },
+  "bundle": {
+    "longDescription": "",
+    "shortDescription": "",
+    "active": true,
+    "category": "DeveloperTool",
+    "copyright": "Code For Real",
+    "targets": ["deb", "appimage", "msi", "dmg"],
+    "icon": [],
+    "externalBin": ["./bin/server"],
+    "windows": {
+      "certificateThumbprint": null,
+      "digestAlgorithm": "sha256",
+      "timestampUrl": ""
+    },
+    "macOS": {
+      "entitlements": null,
+      "exceptionDomain": "",
+      "frameworks": [],
+      "providerShortName": null,
+      "signingIdentity": null
+    },
+    "resources": [],
+    "linux": {
+      "deb": {
+        "depends": []
+      }
+    }
+  },
+  "plugins": {},
+  "app": {
+    "windows": [
+      {
+        "fullscreen": false,
+        "height": 992,
+        "width": 1280,
+        "minWidth": 1080,
+        "minHeight": 800,
+        "resizable": true,
+        "title": "",
+        "hiddenTitle": true
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; img-src 'self' asset: http://asset.localhost asset: https://asset.localhost; style-src 'unsafe-inline' 'self'; connect-src 'self' ipc: http://ipc.localhost ipc: https://ipc.localhost",
+      "dangerousDisableAssetCspModification": ["style-src"],
+      "assetProtocol": {
+        "enable": true
+      }
+    }
+  }
+}
