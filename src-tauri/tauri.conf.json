@@ -14,7 +14,7 @@
     "active": true,
     "category": "DeveloperTool",
     "copyright": "Code For Real",
-    "targets": ["deb", "appimage", "msi", "dmg"],
+    "targets": ["deb"],
     "icon": [],
     "externalBin": ["./bin/server"],
     "windows": {
